@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import HideText from './components/hide-text.vue';
+</script>
 
 <template>
   <main class="f fd-col rg-4">
@@ -12,7 +14,7 @@
           />
         </div>
         <div class="w-100 f fd-col bg-default py-3 px-4 br-3">
-          <h2 class="fw-regular">
+          <h2 class="fw-regular" style="font-family: 'Roboto Condensed'">
             <span class="c-brand"> Н2глобус</span> дает ответ вашим экологичным
             запросам самым чистым и выгодным способом
           </h2>
@@ -31,11 +33,18 @@
           />
         </div>
         <div class="w-100 f fd-col rg-3">
-          <h1 class="c-brand">- Миссия -</h1>
+          <h1
+            class="c-brand fw-medium"
+            style="font-family: 'Oswald'; font-weight: 600"
+          >
+            - Миссия -
+          </h1>
 
-          <h4>ЕСЛИ ХОЧЕШЬ ИЗМЕНИТЬ МИР, ТО НАЧНИ С СЕБЯ</h4>
+          <h4 style="font-family: 'Comfortaa'">
+            ЕСЛИ ХОЧЕШЬ ИЗМЕНИТЬ МИР, ТО НАЧНИ С СЕБЯ
+          </h4>
 
-          <div class="f fd-col rg-2 fw-medium mission">
+          <div class="f fd-col rg-2 mission">
             <p>
               Базовой мыслью, источником идеи о создании данного проекта,
               является мысль о будущем планеты, на которой жить нашим детям. У
@@ -45,78 +54,97 @@
               ископаемое топливо.
             </p>
 
-            <p>
-              Ключевым элементом, позволяющим произвести переход от ископаемого
-              топлива к полноценному использованию возобновляемых видов энергии,
-              является <span class="c-brand">Водород</span>. <br />
-              Основатели проекта, ООО «<a
-                class="c-danger"
-                href="https://cornelius.md/"
-                >Корнелиус</a
-              >», семейное предприятие.
-            </p>
+            <HideText>
+              <p>
+                Ключевым элементом, позволяющим произвести переход от
+                ископаемого топлива к полноценному использованию возобновляемых
+                видов энергии, является
+                <span class="c-brand">Водород</span>.
+                <br />
+                Основатели проекта, ООО «<a
+                  class="c-danger"
+                  href="https://cornelius.md/"
+                  >Корнелиус</a
+                >», семейное предприятие.
+              </p>
 
-            <p>
-              Мы, пользуясь нашим опытом в сфере газоснабжения, решили начать
-              достижение наших глобальных целей со своего скромного хозяйства,
-              что даст нам в будущем существенные преимущества: <br />
-              — шаг за шагом мы начинаем переводить свое хозяйство на уровень —
-              «нейтральный к СО2»; <br />
-              — мы осваиваем первые в своем регионе новые технологии, которые
-              надеемся дадут источник дохода нашим детям еще минимум 100 лет;
-              <br />
-              — мы производим обновление нашего технопарка на новое
-              оборудование, которое имеет в 2 и более раз долгий срок службы,
-              как правило основано на технологиях с минимальным количеством
-              трущихся частей и с отсутствием необходимости частого
-              обслуживания; <br />
-              — мы являемся новаторами
-            </p>
+              <p>
+                Мы, пользуясь нашим опытом в сфере газоснабжения, решили начать
+                достижение наших глобальных целей со своего скромного хозяйства,
+                что даст нам в будущем существенные преимущества:
+                <br />
+                — шаг за шагом мы начинаем переводить свое хозяйство на уровень
+                — «нейтральный к СО2»; <br />
+                — мы осваиваем первые в своем регионе новые технологии, которые
+                надеемся дадут источник дохода нашим детям еще минимум 100 лет;
+                <br />
+                — мы производим обновление нашего технопарка на новое
+                оборудование, которое имеет в 2 и более раз долгий срок службы,
+                как правило основано на технологиях с минимальным количеством
+                трущихся частей и с отсутствием необходимости частого
+                обслуживания; <br />
+                — мы являемся новаторами
+              </p>
+            </HideText>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="f g-4">
-      <div class="w-100">
-        <img class="w-100" src="@/assets/images/diagram.png" />
-      </div>
-      <div class="w-100 f fd-col rg-3">
-        <h1 class="c-brand">- Продукт -</h1>
-
-        <div class="bg-brand p-4 h-100">
-          <p class="fw-medium">
-            Станция заправки водородным топливом H2Globus<br />«Подключите воду
-            и электричество к Станции H2Глобус. Получите автономный источник
-            водорода для экологичного энергоснабжения дома, транспорта и любых
-            других нужд. Все это будет длиться более 20 лет безотказной службы.
-            В сочетании с возобновляемыми источниками электроэнергии Станция
-            делает ваше домашнее хозяйство и транспорт независимым от
-            углеводородного топлива и его коммуникаций.»<br />«Н2Глобус
-            объединил оборудование, работающее на основе электро-химических
-            процессов, без трущихся частей, способное дать от 2 кг/день водорода
-            чистотой 99,9999..% давлением до 700 бар.<br />Станция может
-            масштабироваться от 2 до 100 кг водорода/день. Управление и
-            мониторинг осуществляется с мобильного телефона с использованием
-            искусственного интеллекта. Опционально Станция может осуществлять
-            альтернативное теплоснабжение и электроснабжение зданий, а также
-            генерацию кислорода – от 8,5 до 425 кг/день»
-          </p>
+    <div class="f fd-col rg-3">
+      <section class="f ai-c cg-4 px-3">
+        <div class="w-100"></div>
+        <h1
+          class="w-100 c-brand"
+          style="font-family: 'Oswald'; font-weight: 600"
+        >
+          - Продукт -
+        </h1>
+      </section>
+      <section class="f g-4">
+        <div class="w-100">
+          <img class="w-100" src="@/assets/images/diagram.png" />
         </div>
-      </div>
-    </section>
+        <div class="w-100 f fd-col rg-3">
+          <div class="bg-brand p-4 h-100 f fd-col jc-c">
+            <p class="c-default f fd-col rg-2">
+              Станция заправки водородным топливом H2Globus<br />«Подключите
+              воду и электричество к Станции H2Глобус. Получите автономный
+              источник водорода для экологичного энергоснабжения дома,
+              транспорта и любых других нужд. Все это будет длиться более 20 лет
+              безотказной службы. В сочетании с возобновляемыми источниками
+              электроэнергии Станция делает ваше домашнее хозяйство и транспорт
+              независимым от углеводородного топлива и его коммуникаций.»
+              <HideText>
+                «Н2Глобус объединил оборудование, работающее на основе
+                электро-химических процессов, без трущихся частей, способное
+                дать от 2 кг/день водорода чистотой 99,9999..% давлением до 700
+                бар.<br />Станция может масштабироваться от 2 до 100 кг
+                водорода/день. Управление и мониторинг осуществляется с
+                мобильного телефона с использованием искусственного интеллекта.
+                Опционально Станция может осуществлять альтернативное
+                теплоснабжение и электроснабжение зданий, а также генерацию
+                кислорода – от 8,5 до 425 кг/день»
+              </HideText>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <section class="f jc-c p-4">
       <div class="container f fd-col rg-4 ta-c">
-        <h1 class="c-brand">- Документация -</h1>
+        <h1 class="c-brand" style="font-family: 'Oswald'; font-weight: 600">
+          - Документация -
+        </h1>
 
-        <div class="banner-list f jc-sb g-3">
+        <div class="banner-list f jc-sb g-3 c-second-100" style="font-family: 'Roboto'">
           <div class="f fd-col banner rg-3">
             <div class="image">
               <img src="@/assets/images/alex-nerovnya017-768x926.jpg" />
             </div>
             <h2>Флаер Станция Н2Глобус</h2>
-            <h4>Версия для ПК</h4>
+            <h4 class="fw-regular">Версия для ПК</h4>
             <a
               href="https://h2globus.com/wp-content/uploads/2022/08/Flaer-PK-H2Globus.pdf"
               target="_blank"
@@ -130,7 +158,7 @@
               <img src="@/assets/images/2022-08-13-142907.png.png" />
             </div>
             <h2>Флаер Станция Н2Глобус</h2>
-            <h4>Версия для смарфона</h4>
+            <h4 class="fw-regular">Версия для смарфона</h4>
             <a
               href="https://h2globus.com/wp-content/uploads/2022/08/Flaer-smartfon-H2Globus.pdf"
               target="_blank"
@@ -157,52 +185,90 @@
   </main>
 
   <footer class="mt-5 f jc-c bg-brand p-3">
-    <div class="container f ai-c jc-sb g-4">
+    <div class="container f ai-c jc-sb g-4" style="font-family: 'Roboto'">
       <div class="w-100 f fd-col rg-3">
-        <h1>Контакты</h1>
+        <h1 class="c-default">Контакты</h1>
 
-        <ul class="socials fw-medium f fd-col rg-2">
+        <ul class="socials f fd-col rg-2">
           <li>
-            <a href="mailto:office@h2globus.com" target="_blank" rel="nofollow">
+            <a
+              class="f ai-c cg-2"
+              href="mailto:office@h2globus.com"
+              target="_blank"
+              rel="nofollow"
+            >
+              <span class="material-symbols-outlined c-default"> mail </span>
               office@h2globus.com
             </a>
           </li>
           <li>
-            <a href="tel:37379535511" target="_blank" rel="nofollow">
+            <a
+              class="f ai-c cg-2"
+              href="tel:37379535511"
+              target="_blank"
+              rel="nofollow"
+            >
+              <span class="material-symbols-outlined c-default"> phone </span>
               +37379535511
             </a>
           </li>
           <li>
             <a
+              class="f ai-c cg-2"
               href="https://api.whatsapp.com/send?phone=37379535511"
               target="_blank"
               rel="nofollow"
             >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3781/3781677.png"
+                height="16"
+                style="filter: invert(100%)"
+              />
               WhatsApp
             </a>
           </li>
           <li>
             <a
+              class="f ai-c cg-2"
               href="viber://chat?number=%2B37379535511"
               target="_blank"
               rel="nofollow"
             >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1946/1946553.png"
+                height="16"
+                style="filter: invert(100%)"
+              />
               Viber
             </a>
           </li>
           <li>
             <a
+              class="f ai-c cg-2"
               href="https://t.me/livada_organica"
               target="_blank"
               rel="nofollow"
             >
+              <img
+                src="https://www.freepnglogos.com/uploads/telegram-logo-12.png"
+                height="16"
+                style="filter: invert(100%)"
+              />
               Telegram
             </a>
           </li>
-          <li>
+          <li class="f ai-c cg-2">
+            <span class="material-symbols-outlined c-default">
+              location_on
+            </span>
             Молдова, г.Тирасполь, ул. Карла-Либкнехта 385, каб. 201, 202, 204
           </li>
-          <li>с. Суклея, ул. Котовского 81</li>
+          <li class="f ai-c cg-2">
+            <span class="material-symbols-outlined c-default">
+              location_on
+            </span>
+            с. Суклея, ул. Котовского 81
+          </li>
         </ul>
       </div>
 
@@ -211,8 +277,7 @@
       </div>
 
       <div class="w-100 f fd-col rg-3">
-        <h1>h2globus в соц. сетях</h1>
-        <p>Следите за нами в соц. сетях</p>
+        <h2 class="c-default">h2globus в соц. сетях</h2>
 
         <div class="links f g-3">
           <a
@@ -234,18 +299,24 @@
           </a>
         </div>
 
-        <p>Являемся участниками проекта по развитию Водородных технологий</p>
+        <p class="c-default">
+          Являемся участниками проекта по развитию Водородных технологий
+        </p>
       </div>
     </div>
   </footer>
 </template>
 
 <style lang="scss">
-.mission {
-  p:not(:last-child) {
-    border-bottom: 1px solid #838383;
-    padding-bottom: 8px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  font-size: 16px;
 }
 
 .main_banner {
@@ -267,13 +338,13 @@
 }
 
 @keyframes banner {
-  0%{ 
+  0% {
     scale: 1;
   }
-  50%{ 
+  50% {
     scale: 1.5;
   }
-  100%{ 
+  100% {
     scale: 1;
   }
 }
@@ -333,7 +404,19 @@ a:hover {
 div.bg-brand,
 footer.bg-brand {
   background-color: none;
-  background-image: linear-gradient(#0091f6, #a6daff);
+  background-color: linear-gradient(210deg, #0091f6 0%, #72c4ff 100%);
+}
+footer {
+  overflow: hidden;
+  background-image: url(https://h2globus.com/wp-content/uploads/2022/04/hydrogen-fuel-illustration-cropped.jpg) !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: #6ec1e4 !important;
+  .container {
+    z-index: 2;
+  }
 }
 
 * {
@@ -351,6 +434,7 @@ body {
   line-height: var(--n-lh-regular);
   display: flex;
   min-height: 100vh;
+  font-family: 'Rubik';
 }
 
 #app {
@@ -374,6 +458,7 @@ body {
 a {
   text-decoration: none;
   transition: 0.15s;
+  color: var(--n-second-100);
 }
 
 ul,
