@@ -5,11 +5,11 @@ import HideText from './components/hide-text.vue';
 <template>
   <main class="f fd-col rg-4">
     <section class="main_banner f jc-c p-3 bg-second-100">
-      <div class="container f ai-c">
-        <div class="w-100">
+      <div class="container f g-4 ai-c">
+        <div class="w-100 f jc-c">
           <img
-            class="w-100"
-            src="@/assets/images/h2globus-logo.png"
+            height="300"
+            src="@/assets/images/logo.png"
             alt="Logo"
           />
         </div>
@@ -20,7 +20,8 @@ import HideText from './components/hide-text.vue';
           </h2>
         </div>
       </div>
-      <img src="@/assets/images/alex-nerovnya017-768x926.jpg" alt="" />
+      <img class="slide-1" src="@/assets/images/alex-nerovnya017-768x926.jpg" />
+      <img class="slide-2" src="@/assets/images/headslide2.jpg" />
     </section>
 
     <section class="f jc-c p-3">
@@ -54,7 +55,7 @@ import HideText from './components/hide-text.vue';
               ископаемое топливо.
             </p>
 
-            <HideText>
+            <HideText styles="opacity: 0.7">
               <p>
                 Ключевым элементом, позволяющим произвести переход от
                 ископаемого топлива к полноценному использованию возобновляемых
@@ -138,7 +139,10 @@ import HideText from './components/hide-text.vue';
           - Документация -
         </h1>
 
-        <div class="banner-list f jc-sb g-3 c-second-100" style="font-family: 'Roboto'">
+        <div
+          class="banner-list f jc-sb g-3 c-second-100"
+          style="font-family: 'Roboto'"
+        >
           <div class="f fd-col banner rg-3">
             <div class="image">
               <img src="@/assets/images/alex-nerovnya017-768x926.jpg" />
@@ -272,8 +276,8 @@ import HideText from './components/hide-text.vue';
         </ul>
       </div>
 
-      <div class="w-100">
-        <img class="w-100" src="@/assets/images/h2globus-logo.png" />
+      <div class="w-100 f jc-c">
+        <img height="300"  src="@/assets/images/logo.png" />
       </div>
 
       <div class="w-100 f fd-col rg-3">
@@ -322,7 +326,8 @@ import HideText from './components/hide-text.vue';
 .main_banner {
   position: relative;
   overflow: hidden;
-  > img {
+  min-height: 800px;
+  > img.slide-1 {
     top: 0;
     left: 0;
     position: absolute;
@@ -330,19 +335,49 @@ import HideText from './components/hide-text.vue';
     width: 100%;
     height: 100%;
     filter: blur(2px) brightness(60%);
-    animation: banner 30s infinite;
+    animation: banner1 10s infinite;
+  }
+  > img.slide-2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px) brightness(60%);
+    animation: banner2 10s infinite;
   }
   .container {
     z-index: 10;
+    // color: #828282;
   }
 }
 
-@keyframes banner {
+@keyframes banner1 {
   0% {
+    opacity: 0;
     scale: 1;
   }
   50% {
     scale: 1.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes banner2 {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  75% {
+    opacity: 0;
   }
   100% {
     scale: 1;
@@ -377,6 +412,7 @@ import HideText from './components/hide-text.vue';
 }
 
 footer {
+  min-height: 572px;
   .links {
     a {
       opacity: 0.8;

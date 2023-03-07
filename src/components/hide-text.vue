@@ -2,6 +2,10 @@
 import { ref } from 'vue';
 
 const visible = ref(false);
+
+const props = defineProps({
+  styles: { type: String, default: '' },
+});
 </script>
 
 <template>
@@ -11,8 +15,8 @@ const visible = ref(false);
         <slot />
       </div>
     </Transition>
-
-    <div class="f fd-col ai-c fw-medium">
+    {{ styles }}
+    <div class="f fd-col ai-c fw-medium" :style="styles">
       <p style="cursor: pointer" v-if="!visible" @click="visible = !visible">
         <u> Показать ещё </u>
       </p>
