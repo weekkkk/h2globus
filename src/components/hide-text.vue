@@ -15,7 +15,6 @@ const props = defineProps({
         <slot />
       </div>
     </Transition>
-    {{ styles }}
     <div class="f fd-col ai-c fw-medium" :style="styles">
       <p style="cursor: pointer" v-if="!visible" @click="visible = !visible">
         <u> Показать ещё </u>

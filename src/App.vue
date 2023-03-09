@@ -9,7 +9,7 @@ import HideText from './components/hide-text.vue';
         <div class="w-100 f jc-c">
           <img
             height="300"
-            src="@/assets/images/logo.png"
+            src="@/assets/images/logo.svg"
             alt="Logo"
           />
         </div>
@@ -277,7 +277,7 @@ import HideText from './components/hide-text.vue';
       </div>
 
       <div class="w-100 f jc-c">
-        <img height="300"  src="@/assets/images/logo.png" />
+        <img height="300"  src="@/assets/images/logo.svg" />
       </div>
 
       <div class="w-100 f fd-col rg-3">
