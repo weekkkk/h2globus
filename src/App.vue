@@ -48,7 +48,7 @@ import HideText from './components/hide-text.vue';
               нашей команды нет точных данных о том, что нашу Планету губит
               высокий уровень СО2, как и нет их ни у кого на Планете. Но здравый
               смысл подсказывает, что очень важно прекратить использовать
-              ископаемое топливо.
+              ископаемое топливо
             </p>
 
             <HideText styles="opacity: 0.7">
@@ -329,7 +329,7 @@ import HideText from './components/hide-text.vue';
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: soft-light;
-    background-color: #6ec1e4 !important;
+    background-color: #9ce2ff !important;
   }
   > img.slide-1 {
     top: 0;
