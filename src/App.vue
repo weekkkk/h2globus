@@ -7,13 +7,9 @@ import HideText from './components/hide-text.vue';
     <section class="main_banner f jc-c p-3 bg-second-100">
       <div class="container f g-4 ai-c">
         <div class="w-100 f jc-c">
-          <img
-            height="300"
-            src="@/assets/images/logo.svg"
-            alt="Logo"
-          />
+          <img height="300" src="@/assets/images/logo.svg" alt="Logo" />
         </div>
-        <div class="w-100 f fd-col bg-default py-3 px-4 br-3">
+        <div class="info-box w-100 f fd-col bg-default py-3 px-4 br-3">
           <h2 class="fw-regular" style="font-family: 'Roboto Condensed'">
             <span class="c-brand"> Н2глобус</span> дает ответ вашим экологичным
             запросам самым чистым и выгодным способом
@@ -109,15 +105,15 @@ import HideText from './components/hide-text.vue';
         <div class="w-100 f fd-col rg-3">
           <div class="bg-brand p-4 h-100 f fd-col jc-c">
             <p class="c-default f fd-col rg-2">
-              Станция заправки водородным топливом H2Globus<br />«Подключите
+              Станция заправки водородным топливом H2Globus<br />Подключите
               воду и электричество к Станции H2Глобус. Получите автономный
               источник водорода для экологичного энергоснабжения дома,
               транспорта и любых других нужд. Все это будет длиться более 20 лет
               безотказной службы. В сочетании с возобновляемыми источниками
               электроэнергии Станция делает ваше домашнее хозяйство и транспорт
-              независимым от углеводородного топлива и его коммуникаций.»
+              независимым от углеводородного топлива и его коммуникаций.
               <HideText>
-                «Н2Глобус объединил оборудование, работающее на основе
+                Н2Глобус объединил оборудование, работающее на основе
                 электро-химических процессов, без трущихся частей, способное
                 дать от 2 кг/день водорода чистотой 99,9999..% давлением до 700
                 бар.<br />Станция может масштабироваться от 2 до 100 кг
@@ -125,7 +121,7 @@ import HideText from './components/hide-text.vue';
                 мобильного телефона с использованием искусственного интеллекта.
                 Опционально Станция может осуществлять альтернативное
                 теплоснабжение и электроснабжение зданий, а также генерацию
-                кислорода – от 8,5 до 425 кг/день»
+                кислорода – от 8,5 до 425 кг/день.
               </HideText>
             </p>
           </div>
@@ -277,7 +273,7 @@ import HideText from './components/hide-text.vue';
       </div>
 
       <div class="w-100 f jc-c">
-        <img height="300"  src="@/assets/images/logo.svg" />
+        <img height="300" src="@/assets/images/logo.svg" />
       </div>
 
       <div class="w-100 f fd-col rg-3">
@@ -327,6 +323,14 @@ import HideText from './components/hide-text.vue';
   position: relative;
   overflow: hidden;
   min-height: 800px;
+  .info-box {
+    background-image: url(https://h2globus.com/wp-content/uploads/2022/04/hydrogen-fuel-illustration-cropped.jpg) !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: #6ec1e4 !important;
+  }
   > img.slide-1 {
     top: 0;
     left: 0;

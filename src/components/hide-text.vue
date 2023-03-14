@@ -15,18 +15,21 @@ const props = defineProps({
         <slot />
       </div>
     </Transition>
-    <div class="f fd-col ai-c fw-medium" :style="styles">
-      <p style="cursor: pointer" v-if="!visible" @click="visible = !visible">
-        <u> Показать ещё </u>
-      </p>
-      <p style="cursor: pointer" v-else @click="visible = !visible">
-        <u> Скрыть </u>
-      </p>
+    <div class="hide-text f fs-small-p fd-col ai-fs fw-regular" :style="styles">
+      <span style="cursor: pointer" v-if="!visible" @click="visible = !visible">
+        Показать ещё
+      </span>
+      <span style="cursor: pointer" v-else @click="visible = !visible">
+        Скрыть
+      </span>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.hide-text {
+  margin-top: -4px;
+}
 .text-enter-active,
 .text-leave-active {
   transition: 0.5s ease-in-out;
