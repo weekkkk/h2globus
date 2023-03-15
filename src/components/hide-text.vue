@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="f fd-col rg-2">
+  <div class="f fd-col rg-2" style='display: inline;'>
     <Transition name="text">
       <div v-if="visible" class="f fd-col rg-2">
         <slot />
@@ -28,7 +28,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .hide-text {
-  margin-top: -4px;
+  display: inline !important;  
 }
 .text-enter-active,
 .text-leave-active {
