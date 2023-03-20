@@ -324,12 +324,12 @@ import HideText from './components/hide-text.vue';
   overflow: hidden;
   min-height: 800px;
   .info-box {
-    background-image: url(https://h2globus.com/wp-content/uploads/2022/04/hydrogen-fuel-illustration-cropped.jpg) !important;
+    background-image: url('@/assets/images/lines.svg') !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: soft-light;
-    background-color: #9ce2ff !important;
+    // background-blend-mode: soft-light;
+    background-color: #fff !important;
   }
   > img.slide-1 {
     top: 0;
@@ -448,7 +448,7 @@ footer.bg-brand {
 }
 footer {
   overflow: hidden;
-  background-image: url(https://h2globus.com/wp-content/uploads/2022/04/hydrogen-fuel-illustration-cropped.jpg) !important;
+  background-image: url('@/assets/images/hydrogen-fuel-illustration-cropped.jpg') !important;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
