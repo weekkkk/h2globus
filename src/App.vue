@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import HideText from './components/hide-text.vue';
+import TirPopover from '@/components/popover'
 </script>
 
 <template>
@@ -159,12 +160,18 @@ import HideText from './components/hide-text.vue';
             </div>
             <h2>Флаер Станция Н2Глобус</h2>
             <h4 class="fw-regular">Версия для смарфона</h4>
-            <a
-              href="https://h2globus.com/wp-content/uploads/2022/08/Flaer-smartfon-H2Globus.pdf"
-              target="_blank"
-            >
-              Скачать
-            </a>
+            <TirPopover class="w-100 ta-c" width="140px">
+              <template #content>
+                <div class="f g-2 p-3 ta-c">
+                  <a class="w-100" href="/docs/2.pdf" target="_blank">RU</a>
+                  <a class="w-100" href="/docs/1_USA.pdf" target="_blank">ENG</a>
+                  <a class="w-100" href="/docs/1_RUM.pdf" target="_blank">RO</a>
+                </div>
+              </template>
+              <div class="ta-c w-100"> Скачать </div>
+            </TirPopover>
+            <!-- target="_blank" -->
+            <!-- href="https://h2globus.com/wp-content/uploads/2022/08/Flaer-smartfon-H2Globus.pdf" -->
           </div>
 
           <div class="f fd-col banner rg-3">
@@ -172,12 +179,7 @@ import HideText from './components/hide-text.vue';
               <img src="@/assets/images/kolonka-4k.png.png" />
             </div>
             <h2>Технические данные Станции Н2Глобус</h2>
-            <a
-              href="https://h2globus.com/wp-content/uploads/2022/08/TX4-_1.pdf"
-              target="_blank"
-            >
-              Скачать
-            </a>
+            <a href="/docs/TX4 _1.pdf" target="_blank"> Скачать </a>
           </div>
         </div>
       </div>
